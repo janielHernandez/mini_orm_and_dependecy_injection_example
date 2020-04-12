@@ -1,0 +1,1 @@
+# mini_orm_and_dependecy_injection_example
