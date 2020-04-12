@@ -1,0 +1,85 @@
+04-11 02:59:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PERSON[*] PERSON"; expected "PREPARE, {"; SQL statement:
+PERSON PERSON [42001-176]
+04-11 03:00:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Parameter "#1" is not set; SQL statement:
+insert into Person (id, name, age) values ( ?, ?, ? ); [90012-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:81)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:165)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:158)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:144)
+	at com.company.orm.EntityManagerImp.persist(EntityManagerImp.java:24)
+	at com.company.Main.main(Main.java:22)
+04-11 03:02:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Parameter "#1" is not set; SQL statement:
+insert into Person (id, name, age) values ( ?, ?, ? ); [90012-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:81)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:165)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:158)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:144)
+	at com.company.orm.EntityManagerImp.persist(EntityManagerImp.java:24)
+	at com.company.Main.main(Main.java:22)
+04-11 03:02:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Parameter "#3" is not set; SQL statement:
+insert into Person (id, name, age) values ( ?, ?, ? ); [90012-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:81)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:165)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:158)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:144)
+	at com.company.orm.EntityManagerImp.persist(EntityManagerImp.java:24)
+	at com.company.Main.main(Main.java:22)
+04-11 20:07:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Parameter "#1" is not set; SQL statement:
+select id, name, age from Person where id = ?; [90012-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:81)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:165)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:90)
+	at org.h2.command.Command.executeQuery(Command.java:197)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:109)
+	at com.company.orm.EntityManagerImp.find(EntityManagerImp.java:31)
+	at com.company.Main.main(Main.java:26)
+04-11 20:10:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Parameter "#1" is not set; SQL statement:
+select id, name, age from Person where id = ?; [90012-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:81)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:165)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:90)
+	at org.h2.command.Command.executeQuery(Command.java:197)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:109)
+	at com.company.orm.EntityManagerImp.find(EntityManagerImp.java:31)
+	at com.company.Main.main(Main.java:26)
+04-11 20:12:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+04-11 20:14:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+04-11 20:15:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+04-11 20:16:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+04-11 20:16:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+04-11 20:19:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+04-11 20:19:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
